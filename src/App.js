@@ -1,4 +1,5 @@
 import './App.css';
+import Destaques from './Destaques/Destaques';
 import Menu from './Menu/Menu';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
 
     <Menu />
+    <Destaques />
 
     </div>
    

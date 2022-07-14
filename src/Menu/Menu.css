@@ -1,6 +1,6 @@
 .Menu {
     width: 100%;
-    height: 150px;
+    height: 35px;
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -8,6 +8,10 @@
     box-sizing: border-box;
     padding: 50px;
     
+}
+
+.Menu-hamburguer {
+    display: none;
 }
 
 .Menu-left{
@@ -28,8 +32,8 @@
      transition: all ease-in-out .2s;
 }
 .Menu-left svg.selected {
-width: 45px;
-height: 45px;
+width: 40px;
+height:40px;
 }
 
 .Menu-left svg.selected path {
@@ -41,6 +45,26 @@ height: 45px;
     fill: #272626;
 }
 
+.Menu-right {
+    display: flex;
+    align-items: center;
+}
+
 .Menu-logo{
     cursor: pointer;
+    width: 10em;
+}
+
+@media (max-width: 499px) {
+    .Menu {
+        padding: 5vw;
+        height: 100px;
+    }
+    .Menu-right, .Menu-left {
+        display: none;
+    }
+
+    .Menu-hamburguer {
+        display: block;
+    }
 }
