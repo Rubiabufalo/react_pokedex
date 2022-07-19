@@ -1,3 +1,6 @@
 .Destaques {
     padding: 110px 50px 80px 50px;
 }
+.Destaques h1 {
+    color: #484848;
+}
